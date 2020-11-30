@@ -7,4 +7,4 @@ class Car(models.Model):
 
 class CarRate(models.Model):
     rate_value = models.IntegerField()
-    rate_car_foreignkey = models.ForeignKey(Car, on_delete=models.CASCADE)
+    rate_car_foreignkey = models.ForeignKey(Car, on_delete=models.CASCADE, related_name='rates')
